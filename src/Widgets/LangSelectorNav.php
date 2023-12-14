@@ -8,7 +8,7 @@ use Dcat\Admin\DcatIcon;
 
 class LangSelectorNav extends Widget
 {
-    protected $view = 'admin::widgets.lang-selector';
+    protected $view = 'dev4traders::d4t-admin-lang-selector';
 
     public function __construct( public bool $useFlags = false, public DcatIcon $icon = DcatIcon::GLOBE)
     {
