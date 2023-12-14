@@ -1,0 +1,33 @@
+{
+    "name": "dev4traders/d4t-admin-lang-selector",
+    "alias": "Lang Selector",
+    "description": "Language Selector",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/dev4traders/d4t-admin-lang-selector",
+    "license": "MIT",
+    "version": "1.1.1",
+    "authors": [
+        {
+            "name": "mikha",
+            "email": "mikha.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "mikha-dev/dcat-admin": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "D4T\\Admin\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "D4T\\Admin\\LangSelectorServiceProvider",
+        "laravel": {
+            "providers": [
+                "D4T\\Admin\\LangSelectorServiceProvider"
+            ]
+        }
+    }
+}
