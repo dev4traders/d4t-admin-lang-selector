@@ -3,7 +3,7 @@
         @if($useFlags)
         <i class="flag-icon flag-icon-{!! $current_locale !!}"></i>
         @else
-            <i class='{{ $icon }}'></i>
+            <i class='fa {{ $icon }}'></i>
         @endif
     </a>
     <ul class="dropdown-menu dropdown-menu-end shadow-200">

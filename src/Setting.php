@@ -14,13 +14,21 @@ class Setting extends Form
 
     protected function formatInput(array $input)
     {
-        $input['allowed_methods'] = Helper::array($input['locales']);
+        $input['locales'] = Helper::array($input['locales']);
 
         return $input;
     }
 
     public function form()
     {
-        $this->multipleSelect('locales')->options([]);
+
+        $config = config('lang-selector.supported_locales');
+
+        $locales = collect($config)->mapWithKeys(function ($_, $key) use ($config) {
+            return [ $key => ServiceProvider::trans('lang-selector.' . $key)];
+        });
+
+        // dd($locales);
+        $this->multipleSelect('locales')->options($locales);
     }
 }
