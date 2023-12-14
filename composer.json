@@ -19,14 +19,14 @@
     },
     "autoload": {
         "psr-4": {
-            "D4T\\Admin\\": "src/"
+            "D4T\\Admin\\LangSelector\\": "src/"
         }
     },
     "extra": {
-        "dcat-admin": "D4T\\Admin\\LangSelectorServiceProvider",
+        "dcat-admin": "D4T\\Admin\\LangSelector\\ServiceProvider",
         "laravel": {
             "providers": [
-                "D4T\\Admin\\LangSelectorServiceProvider"
+                "D4T\\Admin\\LangSelector\\ServiceProvider"
             ]
         }
     }

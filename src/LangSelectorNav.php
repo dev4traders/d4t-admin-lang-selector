@@ -1,10 +1,10 @@
 <?php
 
-namespace D4T\Admin\Widgets\Navs;
+namespace D4T\Admin\LangSelector;
 
+use Dcat\Admin\DcatIcon;
 use Dcat\Admin\Widgets\Widget;
 use Illuminate\Support\Facades\App;
-use Dcat\Admin\DcatIcon;
 
 class LangSelectorNav extends Widget
 {
@@ -22,7 +22,7 @@ class LangSelectorNav extends Widget
             'useFlags' => $this->useFlags,
             'current_url' => request()->path(),
             'current_locale' => App::getLocale(),
-            'locales' => config('admin.supported_locales'),
+            'locales' => config('lang-selector.supported_locales'),
             'attributes' => $this->formatHtmlAttributes(),
         ];
     }
