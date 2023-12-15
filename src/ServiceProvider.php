@@ -26,7 +26,7 @@ class ServiceProvider extends ServiceProviderBase
         $this->loadConfig();
 
         Admin::navbar(function(Navbar $navbar) {
-            $navbar->right(new LangSelectorNav());
+            $navbar->addNav(new LangSelectorNav());
         });
     }
 
