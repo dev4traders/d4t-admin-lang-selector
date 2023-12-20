@@ -3,6 +3,7 @@
 namespace D4T\Admin\LangSelector;
 
 use Dcat\Admin\DcatIcon;
+use Dcat\Admin\Enums\RouteAuth;
 use Dcat\Admin\Widgets\Widget;
 use Illuminate\Support\Facades\App;
 
@@ -29,6 +30,7 @@ class LangSelectorNav extends Widget
 
         return [
             'icon' => $this->icon->_(),
+            //'url' => admin_route(RouteAuth::LOCALE()),
             'useFlags' => $this->useFlags,
             'current_url' => request()->path(),
             'current_locale' => App::getLocale(),
