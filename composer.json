@@ -14,8 +14,7 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "mikha-dev/dcat-admin": "dev-main"
+        "php": "^8.1"
     },
     "autoload": {
         "psr-4": {
