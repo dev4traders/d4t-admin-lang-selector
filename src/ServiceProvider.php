@@ -3,9 +3,9 @@
 namespace D4T\Admin\LangSelector;
 
 use Dcat\Admin\Admin;
+use Dcat\Admin\Layout\Navbar;
 use Dcat\Admin\Enums\ExtensionType;
 use Dcat\Admin\Extend\ServiceProvider as ServiceProviderBase;
-use Dcat\Admin\Layout\Navbar;
 
 class ServiceProvider extends ServiceProviderBase
 {
